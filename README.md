@@ -8,7 +8,7 @@ For example, `files/kitchen` is a 30 line file, so it repeats once every 30 days
 
 `schedule.py` doesn't require these files to run, but it handles files with the following names differently:
 
-- `files/main` is where you would schedule events. It scans the first line of each file for a date, and it displays all the events that will happen today or tomorrow. Dates can be in `YYYY-MM-DD` format or `%j` format (Day of the year). Lines that don't begin with a number are ignored by the program so you can use them for organisation.
+- `files/main` is where you would schedule events. It scans the start of each line for a date, and then displays all the events that will happen today or tomorrow. Dates can be in `YYYY-MM-DD` format or `%j` format (Day of the year). Lines that don't begin with a number are ignored by the program so you can use them for organisation.
 
 - `files/sticky` all lines in sticky are always displayed. I use this to keep track of what chapter is next in the books I'm reading or what row I'm on in the scarf I'm knitting.
 

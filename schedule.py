@@ -33,12 +33,15 @@ if __name__ == '__main__':
 def again():
     """Reload the files, add a task, or quit.
     """
-    whatDo = input("\nDo you want to [R]eload the files, [A]dd a program to " +
-                   "the schedule, or [Q]uit? R/a/q ") or 'R'
+    # editing the schedule isn't implemented yet; use a text editor for now
+    #whatDo = input("\nDo you want to [R]eload the files, [A]dd a program to " +
+    #               "the schedule, or [Q]uit? R/a/q ") or 'R'
+    whatDo = input("Do you want to [R]eload the files or [Q]uit?")
     if whatDo[0].upper() == "R":
         mainThread()
-    elif whatDo[0].upper() == "A":
-        addEvent()
+    #not implemented yet
+    #elif whatDo[0].upper() == "A":
+    #    addEvent()
     else:
         print("Bye!")
         exit()

@@ -1,10 +1,10 @@
-#Schedule.py
+# Schedule.py
 
 `schedule.py` is a way of producing a different todo list everyday so that, over time, everything will get done. The files in the files directory can be named anything. You can delete the default ones or add your own.
 
 For example, `files/kitchen` is a 30 line file, so it repeats once every 30 days, starting over on line 0 on the 1st January each year. A 10 line file will repeat once every 10 days.
 
-##Special files
+## Special files
 
 `schedule.py` doesn't require these files to run, but it handles files with the following names differently:
 
@@ -14,6 +14,6 @@ For example, `files/kitchen` is a 30 line file, so it repeats once every 30 days
 
 - `files/hour` loops once an hour instead of once a day. This is where you'd put your daily routine.
 
-##Plans
+## Plans
 
 Right now, you can only edit the files with a text editor, but I'm planning to let you edit at least the `main` file from within the program itself. Unfortunately, there's a bug in the way parsedatetime handles day of the year, and it's not useful to me if I can't add a task in natural language like "go the library at 4pm on the 333rd."

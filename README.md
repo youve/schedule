@@ -16,4 +16,4 @@ For example, `files/kitchen` is a 30 line file, so it repeats once every 30 days
 
 ## Plans
 
-Right now, you can only edit the files with a text editor, but I'm planning to let you edit at least the `main` file from within the program itself. Unfortunately, there's a bug in the way parsedatetime handles day of the year; it always outputs the current day of the year instead of the target day of the year. Day of the year is more salient to me than day of the month so I want to use that format preferentially in `main` even though it can understand YYYY-MM-DD format too.
+Right now, you can only edit the files with a text editor, but I'm planning to let you edit at least the `main` file from within the program itself. Unfortunately, there's a bug in the way parsedatetime handles [day of the year](https://github.com/bear/parsedatetime/issues/232); it outputs the current day of the year instead of the target day of the year when an exact date is specified. Day of the year is more salient to me than day of the month so I want to use that format preferentially in `main` even though it can understand YYYY-MM-DD format too.
